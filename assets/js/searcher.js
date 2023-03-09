@@ -48,7 +48,7 @@ const loadProducts = async (filtro) => {
       price=etiquetas3[0].innerHTML;
       type=etiquetas4[0].innerHTML;
 
-    if(name === filtro || type === filtro || filtro === '' || e.name.includes(filtro,0) || e.type.includes(filtro,0) ){
+    if(name === filtro || type === filtro || filtro === '' || name.includes(filtro,0) || type.includes(filtro,0) ){
       Producto = Producto + `
       <div class="col-xl-3 col-md-6 mb-xl-0 mb-4 mt-4">
         <div class="card card-blog card-plain">
